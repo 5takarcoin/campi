@@ -9,7 +9,7 @@ const Navbar = () => {
           <Image src="/logo.svg" alt="Logo" width={24} height={24}></Image>
           <p className="text-xl text-white ">Campi</p>
         </div>
-        <div className="flex gap-6 items-center">
+        <div className="gap-6 items-center hidden md:flex">
           <div>
             <ul className="flex gap-4 text-white">
               {["Contacts", "Campaigns", "Management", "Dashboard"].map(
