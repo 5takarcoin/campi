@@ -14,7 +14,7 @@ const DashedLine = () => {
           x2="1785"
           y2="0.500156"
           stroke="#1B222C"
-          stroke-dasharray="13 13"
+          strokeDasharray="13 13"
         />
       </svg>
     </div>

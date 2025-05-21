@@ -1,3 +1,5 @@
+"use client";
+
 const FormInput = ({
   label,
   name,
@@ -10,6 +12,16 @@ const FormInput = ({
   paste?: boolean;
 }) => {
   if (placeholder === "" && paste) placeholder = "paste link here";
+
+  const handlePaste = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    navigator.clipboard.readText().then((text) => {
+      const input = document.getElementById(name) as HTMLInputElement;
+      if (input) {
+        input.value = text;
+      }
+    });
+  };
 
   return (
     <div className="flex flex-col gap-1 mb-4">
@@ -24,7 +36,10 @@ const FormInput = ({
           id={name}
         />
         {paste && (
-          <button className="bg-foreground  text-white m-1 rounded-md px-4 text-md">
+          <button
+            onClick={handlePaste}
+            className="bg-foreground  text-white m-1 rounded-md px-4 text-md"
+          >
             Paste
           </button>
         )}
