@@ -9,14 +9,20 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-  --button: #384f70;
+  --foreground: #1B222C;
+  --button: #384F70;
+  --orangish: #EAB308;
+  --greenish: #22C55E;
+  --fore10: #5D636A;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-orangish: var(--orangish);
+  --color-greenish: var(--greenish);
   --color-button: var(--button);
+  --color-fore10: var(--fore10);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

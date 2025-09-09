@@ -48,7 +48,7 @@ export default function Home() {
   </div>
   
   <div className="flex justify-end gap-4">
-    <button className="text-foreground/70 hover:text-foreground transition-all cursor-pointer">
+    <button className="text-foreground/70 hover:text-foreground transition-all">
       Select contacts to proceed
     </button>
   <button className="bg-foreground text-white rounded-lg pl-4 p-2 flex items-center gap-2 group cursor-pointer transition-all duration-200">

@@ -39,7 +39,7 @@ const Page = () => {
 
             <p className="text-center">hit confirm to upload</p>
             <div className="text-end">
-              <button className="bg-button  text-white m-1 rounded-md px-4 py-1 text-md">
+              <button className="bg-button text-white m-1 rounded-md px-4 py-1 text-md">
                 Modify
               </button>
               <button
