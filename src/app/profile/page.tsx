@@ -1,9 +1,6 @@
 "use client";
 
-import { AiFillEdit } from "react-icons/ai";
 import { FaUserCircle } from "react-icons/fa";
-import { IoMdHeart } from "react-icons/io";
-import { TiUserAdd } from "react-icons/ti";
 
 const personalDetails = [
   { label: "Company name", value: "linkedin.com" },
@@ -44,7 +41,7 @@ const Page = () => {
         </h3>
         
        {personalDetails.map((detail) => (
-        <div className="flex">
+        <div key={detail.label} className="flex">
           <span className="w-72">{detail.label}</span>
           <span className="">{detail.value}</span>
         </div>
@@ -59,7 +56,7 @@ const Page = () => {
         
         
         {contactDetails.map((detail) => (
-          <div className="flex">
+          <div key={detail.label} className="flex">
             <span className="w-72">{detail.label}</span>
             <span className="">{detail.value}</span>
           </div>
@@ -72,7 +69,7 @@ const Page = () => {
         </h3>
 
         {communication.map((detail) => (
-          <div className="flex gap-2 items-center">
+          <div key={detail} className="flex gap-2 items-center">
             <span className="h-[6px] w-[6px] bg-foreground rounded-full"></span><span className="">{detail}</span>
           </div>
         ))}
