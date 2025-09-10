@@ -28,7 +28,7 @@ export default function Home() {
 
             <div className="flex flex-col gap-4 mb-8">
               {kcval.map((val) => (
-                <div className="flex items-center justify-between">
+                <div key={val} className="flex items-center justify-between">
                   <div className="flex items-center gap-4">
                   <HiMenuAlt4 className="text-foreground/70 text-2xl" />
                   <div key={val}>

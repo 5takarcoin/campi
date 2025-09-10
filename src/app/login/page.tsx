@@ -3,7 +3,7 @@
 import Image from "next/image"
 import { useState, useEffect } from "react"
 
-const page = () => {
+const Page = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -34,4 +34,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

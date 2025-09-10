@@ -36,7 +36,7 @@ const Page = () => {
           <br/>
 
 There’s something timeless about fabric —<br/> It holds culture, captures design, and connects generations.<br/> And your work? It embodies that magic.
-At [Your Agency/Company Name], we see what you're building — a brand that doesn’t just sell cloth, but crafts legacy.<br/> That’s why we’re excited to partner with businesses like yours — to turn craftsmanship into conversation, and textiles into talk-of-the-town.
+At [Your Agency/Company Name], we see what yore building — a brand that doesn’t just sell cloth, but crafts legacy.<br/> That’s why we’re excited to partner with businesses like yours — to turn craftsmanship into conversation, and textiles into talk-of-the-town.
 Here’s what we’re offering for you:
 A customized marketing strategy tailored for your fabric business
 Visual storytelling that aligns with your brand voice

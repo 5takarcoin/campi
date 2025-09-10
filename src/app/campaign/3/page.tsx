@@ -45,7 +45,7 @@ export default function Home() {
   <h3 className=" text-xl mb-4">Setup a campaign plan</h3>
 
   <div className="grid grid-cols-3 gap-4 mb-8">
-    {Object.entries(days).map(([dayKey, _], dayIndex) => (
+    {Object.entries(days).map(([dayKey], dayIndex) => (
       <div key={dayKey} className="bg-button/10 hover:bg-button/20 cursor-pointer rounded-xl p-2 flex flex-col h-full">
         <h4 className="text-xl font-semibold text-center">Day {dayIndex + 1}</h4>
       </div>
@@ -67,16 +67,14 @@ export default function Home() {
         <p className="">{dayData[2]}</p>
       </div>
     ))}
-    {Object.entries(days).map(([dayKey, _]) => (
-      <div key={`${dayKey}-actions`} className="flex gap-2 justify-end">
+    {Object.entries(days).map(([dayKey], dayIndex) => (
+      <div key={`${dayKey}-${dayIndex}-actions`} className="flex gap-2 justify-end">
         <button className="flex items-center gap-1 bg-button/10 hover:bg-button/20 cursor-pointer rounded-lg px-2 py-1"><span>Modify</span><AiFillEdit /></button>
         <button className="flex items-center gap-1 bg-button/10 hover:bg-button/20 cursor-pointer rounded-lg px-2 py-1"><span>Save</span><RiSaveFill /></button>
       </div>
     ))}
   </div>
-  
-  
-  
+    
 
   </div>
   <div className="flex justify-end gap-4">
