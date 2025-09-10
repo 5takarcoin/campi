@@ -1,4 +1,5 @@
 import DropDown from "@/components/DropDown";
+import Link from "next/link";
 import { FaChevronRight, FaPlus } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { TiUserAdd } from "react-icons/ti";
@@ -23,6 +24,10 @@ export default function Home() {
       <button className="flex border-foreground border-2 rounded-lg px-4 gap-1 items-center hover:text-white hover:bg-foreground transition-all"><span>Add New Contacts</span><TiUserAdd className="text-" /></button>
     </div>
   </div>
+
+  <h3 className=" text-xl mb-4">Tell us about the Campaign</h3>
+
+  <textarea name="" id="" placeholder="Type to describe" className="w-full border px-4 py-2 rounded-lg border-foreground"></textarea>
 
   <h3 className=" text-xl">Add Campaign Tag</h3>
   {/* Dropdown */}
@@ -61,10 +66,10 @@ export default function Home() {
     <button className="text-foreground/70 hover:text-foreground transition-all">
       Select type to proceed
     </button>
-  <button className="bg-foreground text-white rounded-lg pl-4 p-2 flex items-center gap-2 group cursor-pointer transition-all duration-200">
+  <Link href="/campaign/3" className="bg-foreground text-white rounded-lg pl-4 p-2 flex items-center gap-2 group cursor-pointer transition-all duration-200">
     <span>Next</span>
     <FaChevronRight className="text-xs opacity-0 group-hover:opacity-100 w-0 group-hover:w-5 overflow-hidden transition-all duration-200" />
-  </button>
+  </Link>
   </div>
 
   </div>;
